@@ -1,0 +1,108 @@
+A. Persiapan
+
+Peralatan:
+	•	Access Point
+	•	Kabel LAN
+	•	Laptop / HP
+	•	Router (MikroTik / modem ISP)
+
+Data yang perlu:
+	•	SSID (nama WiFi)
+	•	Password WiFi
+	•	IP jaringan (contoh: 192.168.1.0/24)
+
+⸻
+
+B. Hubungkan ke Access Point
+	1.	Sambungkan AP ke listrik
+	2.	Hubungkan laptop ke AP (LAN atau WiFi default)
+	3.	Atur IP laptop otomatis (DHCP) atau manual jika perlu
+
+⸻
+
+C. Login ke AP
+	1.	Buka browser
+	2.	Akses IP default AP, contoh:
+	•	192.168.0.1
+	•	192.168.1.1
+	3.	Login:
+	•	User: admin
+	•	Password: admin (atau sesuai label)
+
+⸻
+
+D. Setting IP Access Point
+
+Agar tidak bentrok dengan router
+
+	1.	Masuk menu Network / LAN
+	2.	Ubah IP AP, contoh:
+	•	IP: 192.168.1.2
+	•	Subnet: 255.255.255.0
+	•	Gateway: 192.168.1.1 (IP router)
+	3.	Disable DHCP Server di AP
+	4.	Simpan & reboot
+
+⸻
+
+E. Setting Wireless (WiFi)
+	1.	Masuk menu Wireless / WiFi
+	2.	Atur:
+	•	SSID: Nama WiFi
+	•	Region/Country: Indonesia
+	•	Mode: Access Point
+	•	Band: 2.4 GHz / 5 GHz
+
+⸻
+
+F. Setting Keamanan WiFi
+	1.	Wireless Security
+	2.	Pilih:
+	•	WPA2-PSK atau WPA2/WPA3
+	3.	Buat password (min. 8 karakter)
+	4.	Simpan
+
+⸻
+
+G. Setting Channel & Bandwidth
+
+2.4 GHz
+	•	Channel: 1 / 6 / 11
+	•	Bandwidth: 20 MHz
+
+5 GHz
+	•	Channel: Auto / channel bebas
+	•	Bandwidth: 40–80 MHz
+
+⸻
+
+H. Hubungkan ke Router
+	1.	Sambungkan kabel LAN:
+	•	Router → AP (port LAN)
+	•	❌ Jangan ke port WAN (kecuali mode router)
+	2.	Client WiFi otomatis dapat IP dari router
+
+⸻
+
+I. Testing
+	1.	Sambung WiFi
+	2.	Cek IP (harus satu jaringan dengan router)
+	3.	Tes internet
+	4.	Tes kecepatan & jarak sinyal
+
+⸻
+
+J. Tips Penting
+
+✔ DHCP hanya di router, bukan AP
+✔ IP AP berbeda dengan router
+✔ Gunakan WPA2/WPA3 (hindari WEP)
+✔ Pasang AP di tempat tinggi & terbuka
+
+⸻
+
+Mode Tambahan (Opsional)
+	•	AP Mode → WiFi dari router (disarankan)
+	•	Repeater / Extender → Memperluas WiFi
+	•	WDS Bridge → Antar AP tanpa kabel
+	•	Controller (UniFi / Omada) → Banyak AP
